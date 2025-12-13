@@ -1,0 +1,172 @@
+.footer {
+  width: 100%;
+  background-color: #f7f7f7;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Icons Section */
+.footer_container1 {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* Wrap on small screens */
+  background: #fff;
+}
+
+.footer_item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer_item-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Main Links Section */
+.footer_container2 {
+  display: flex;
+  flex-wrap: wrap; /* Allows stacking */
+  padding: 40px 20px;
+  justify-content: space-between;
+}
+
+/* The 3 Columns (Know Us, Helpdesk, Network) */
+.footer_content2 {
+  flex: 2; /* Takes up 2/3 space */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 40px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.footer_item2 {
+  flex: 1 1 200px; /* Min width 200px */
+  margin-bottom: 20px;
+}
+
+.footer_item2-con p {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer_li {
+  list-style: none;
+  font-size: 13px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+.footer_li:hover {
+  color: #20A87E;
+}
+
+/* Social & App Section */
+.footer_content3 {
+  flex: 1; /* Takes 1/3 space */
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_social-title {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer_social-link img {
+  width: 32px;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+
+.footer_social-link img:hover {
+  transform: scale(1.1);
+}
+
+.footer_download {
+  margin-top: 30px;
+}
+
+/* Partners / Payment */
+.footer_container3 {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.footer_payment {
+  font-weight: 700;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer_partner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer_partner-img img {
+  height: 25px;
+}
+
+.footer_end {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Hides Accordion on Desktop */
+.footer_accordion {
+  display: none;
+}
+
+/* ========================================= */
+/* MOBILE RESPONSIVENESS */
+/* ========================================= */
+@media screen and (max-width: 768px) {
+  /* Stack Top Icons */
+  .footer_container1 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  /* Stack Main Content */
+  .footer_container2 {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .footer_content2 {
+    border-right: none;
+    padding-right: 0;
+    flex-direction: column;
+  }
+
+  .footer_content3 {
+    padding-left: 0;
+    margin-top: 30px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 30px;
+  }
+
+  /* Show Accordions on Mobile (Optional if you want dropdowns) */
+  /* For now, we will keep list visible for better SEO/UX */
+  .footer_item2 {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,55 @@
+.nav {
+  width: 100%;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.nav_container {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Mobile: Hamburger Button Logic handled by ChakraUI in JSX */
+/* These styles support the desktop layout */
+
+.nav_list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_link {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.nav_link:hover {
+  color: #20A87E; /* Brand Green */
+}
+
+/* Responsive Breakpoints */
+@media screen and (max-width: 992px) {
+  .nav_content {
+    display: none; /* Handled by Mobile Menu in Navbar.jsx */
+  }
+  
+  .nav_container {
+    padding: 0 15px;
+  }
+}
